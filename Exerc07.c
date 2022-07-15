@@ -25,7 +25,7 @@ int main(){
     double x;
     puts("Digite um valor para x");
     scanf("%lf",&x);
-    printf("%f\n",senx(x));
+    printf("Seno da funcao: %f\n",senx(x));
     printf("Seno  do math.h = %f",sin(x));
     return 0;
 }

@@ -11,14 +11,14 @@ int todias(data *data,int i){
 int main(){
     data referencia;
     int diasref,n,i;
-    puts("Insira uma data de referencia no formato(dd/mm/aaaa");
+    puts("Insira uma data de referencia no formato(dd/mm/aaaa) separe por /");
     scanf("%d/%d/%d",&referencia.dia,&referencia.mes,&referencia.ano);
     diasref=referencia.dia+(referencia.mes*30)+(referencia.ano*365);
     puts("Quantas datas?");
     scanf("%d",&n);
     data datas[n];
     for(i=0;i<n;i++){
-        puts("Digite uma data no formato[dd/mm/aaaa]");
+        puts("Digite uma data no formato[dd/mm/aaaa] separe por /");
         scanf("%d/%d/%d",&datas[i].dia,&datas[i].mes,&datas[i].ano);
         datas[i].diastotal=todias(datas,i); //armazena os dias totais de cada data
         if(diasref>datas[i].diastotal){ // calculo a diferenca de dias entre as datas
